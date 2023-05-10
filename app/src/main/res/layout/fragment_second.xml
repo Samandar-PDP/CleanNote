@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF6263"
+    tools:context=".second.SecondFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn1"
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/white"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#FF6263" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn2"
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#38CC77" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn3"
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#23C4ED" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn4"
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#EDBF69" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn5"
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#5A20CB" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="Title..."
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="top"
+        android:hint="Content"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

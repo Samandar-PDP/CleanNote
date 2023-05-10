@@ -1,0 +1,9 @@
+package com.sdk.domain.model
+
+data class Note(
+    val id: String,
+    val title: String,
+    val content: String,
+    val color: String,
+    val time: String
+)
